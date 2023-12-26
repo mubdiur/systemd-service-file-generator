@@ -850,7 +850,7 @@ right: 2px;
 left: auto;
 position: absolute;
 top: 0;">
-                                   <md-icon ng-class="{'hint': ${helpVarName}}" md-svg-src="info.svg"></md-icon>
+                                   <img src='info.png' style="filter: invert(1)"  width=24 height=24/>
                              </md-button>
                            
                             
@@ -880,7 +880,7 @@ right: 2px;
 left: auto;
 position: absolute;
 top: 0">
-                                  <md-icon ng-class="{'hint': ${helpVarName}}" md-svg-src="info.svg"></md-icon>
+                                  <img ng-class="{'hint': ${helpVarName}}" src="info.png" height=24 width=24 style="filter: invert(1)"  />
                              </md-button>
                            
                             
@@ -905,7 +905,7 @@ right: 2px;
 left: auto;
 position: absolute;
 top: 0;">
-                                   <md-icon ng-class="{'hint': ${helpVarName}}" md-svg-src="info.svg"></md-icon>
+                                   <img ng-class="{'hint': ${helpVarName}}" src="info.png" height=24 width=24 style="filter: invert(1)"  />
                              </md-button>
                            
                             
@@ -932,7 +932,7 @@ right: 2px;
 left: auto;
 position: absolute;
 top: 0;">
-                                   <md-icon ng-class="{'hint': ${helpVarName}}" md-svg-src="info.svg"></md-icon>
+                                   <img ng-class="{'hint': ${helpVarName}}" src="info.png" height=24 width=24 style="filter: invert(1)"   />
                              </md-button>
                            
                             

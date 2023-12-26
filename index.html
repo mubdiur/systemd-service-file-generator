@@ -10,13 +10,11 @@
     <meta name="keywords" content="systemd service file generator, systemd generator, linux service files">
 
     <!-- Angular Material style sheet -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <link rel="stylesheet"
-          href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+          href="angular-material.min.css">
     <link rel="stylesheet"
-          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
-    <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/vs2015.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+          href="default.min.css">
+    <script src="highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 
     <style>
@@ -66,7 +64,7 @@
 
 <div layout="row" layout-xs="column" layout-wrap layout-padding>
     <div flex="">
-        <h1 class="md-display-3" style="text-align: center;">My Systemd Generator</h1>
+        <h1 class="md-display-3" style="text-align: center;">Systemd File Generator</h1>
         <p class="md-body-2">A simple Systemd service file online generator. This powerful and
             intuitive user
             interface makes us more efficient when we are creating new services file with all possible settings. You can
@@ -75,7 +73,7 @@
             enjoy!
         </p>
         <p style="text-align: center;">
-            Find the code <a href="https://github.com/NunuM/my-systemd-service-file-generator">GitHub</a>
+            Find the code <a href="https://github.com/mubdiur/systemd-service-file-generator">GitHub</a>
         </p>
     </div>
     <div flex="" style="width: 100%;">
@@ -106,8 +104,7 @@ sudo systemctl daemon-reload
             <span class="flex"></span>
 
             <md-button class="md-icon-button" aria-label="More">
-                <md-icon ng-click="showOptionsDialogue($event,'unit', 'unitVisibleItems')" md-svg-icon="plus.svg">
-                </md-icon>
+                <img ng-click="showOptionsDialogue($event,'unit', 'unitVisibleItems')" src="plus.png" height=24 width=24 alt="plus"/>
             </md-button>
 
         </md-toolbar>
@@ -126,7 +123,7 @@ sudo systemctl daemon-reload
 
             <md-button ng-click="showOptionsDialogue($event,'service', 'serviceVisibleItems')"
                        class="md-icon-button" aria-label="More">
-                <md-icon md-svg-icon="/plus.svg"></md-icon>
+                <img src="plus.png" height=24 width=24 alt="plus" />
             </md-button>
 
         </md-toolbar>
@@ -143,7 +140,7 @@ sudo systemctl daemon-reload
 
             <md-button ng-click="showOptionsDialogue($event,'install', 'installVisibleItems')"
                        class="md-icon-button" aria-label="More">
-                <md-icon md-svg-icon="/plus.svg"></md-icon>
+                <img src="plus.png" height=24 width=24 alt="plus" />
             </md-button>
 
         </md-toolbar>
@@ -158,7 +155,7 @@ sudo systemctl daemon-reload
             <span class="flex"></span>
 
             <md-button ng-click="download()" class="md-icon-button" aria-label="Download">
-                <md-icon md-svg-icon="/download.svg"></md-icon>
+                <img alt="download" src="/download.png" height=24 width=24/>
             </md-button>
 
         </md-toolbar>
@@ -169,19 +166,18 @@ sudo systemctl daemon-reload
 </div>
 
 <footer>
-    <p>Made with ❤️ by <a href="https://github.com/NunuM" rel="author" target="__blank">NunuM</a> | Powered by <a
-            href="https://talos.sh">Talos</a></p>
+    <p>Made with ❤️ by <a href="https://github.com/mubdiur" rel="author" target="__blank">Mubdiur</a>
 </footer>
 
 
 <!-- Angular Material requires Angular.js Libraries -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-animate.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-aria.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-messages.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="angular-animate.min.js"></script>
+<script src="angular-aria.min.js"></script>
+<script src="angular-messages.min.js"></script>
 
 <!-- Angular Material Library -->
-<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+<script src="angular-material.min.js"></script>
 
 <script src="app.js"></script>
 </body>

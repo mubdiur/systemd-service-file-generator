@@ -1,10 +1,10 @@
-### My Systemd Generator
+# Systemd Generator
 
 Tool that assist you when you are creating new service files for linux systemd
 
-[Tool Available Here](https://mysystemd.talos.sh)
+[Tool Available Here](https://mubdiur.github.io/systemd-service-file-generator)
 
-#### Docs scrapping
+## Docs scrapping
 
 ````js
 
